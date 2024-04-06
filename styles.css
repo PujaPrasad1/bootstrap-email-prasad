@@ -1,0 +1,66 @@
+body {
+    background-color: #f8f9fa;
+}
+.container-fluid {
+    margin-top: 50px;
+}
+.compose-btn, 
+.reply-btn {
+margin-top: 20px;
+ } 
+ .search-bar { 
+    margin-top: 20px;
+} 
+.folders, 
+.messages, 
+.selected-message, 
+.recent-activity { 
+    padding: 20px; 
+    background-color: #fff;
+     border-radius: 10px; 
+     box-shadow: 0 0 10px rgba(0,0,0.1);
+} 
+.selected-message { 
+    margin-top: 20px; 
+    animation: slideIn 0.5s ease-in-out;
+} 
+.message-content { 
+    padding: 15px; 
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+     @media (max-width: 991px) { 
+        .folders, 
+        .messages, 
+        .selected-message, 
+        .recent-activity {
+             margin-top: 20px; 
+            } 
+        
+        @media (max-width: 767px) { 
+            .compose-btn,
+             .reply-btn {
+             margin-top: 10px; 
+            } 
+            .search-bar {
+                 margin-top: 10px; 
+            } 
+            .folders, 
+            .messages, 
+            .selected-message,
+             .recent-activity { 
+                margin-top: 10px; 
+                padding: 10px; } 
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translate(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translate(0);
+                opacity: -1;
+            }
+        }
