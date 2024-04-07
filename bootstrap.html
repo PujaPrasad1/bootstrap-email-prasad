@@ -14,14 +14,8 @@
     <div class="container-fluid">
        <div class="row"> 
         <div class="col-lg-3">
-          
-           <span class="compose-btn">
-             <button class="btn btn-primary btn-block">Compose</button>
-            </span>
-            <span class="search-bar">
-              <input type="text" class="form-control" placeholder="Search..."> 
-            </span> 
-            <div class="folders">
+         
+         <div class="folders">
                <h3>Folders</h3> 
               <ul class="list-group"> 
                 <li class="list-group-item">Inbox</li> 
@@ -29,15 +23,19 @@
                 <li class="list-group-item">Drafts</li> 
               </ul> 
             </div>
-              <div>
-
-              </div>
+              
+              <span class="compose-btn">
+                <button class="btn btn-primary btn-block">Compose</button>
+               </span>
+               <span class="search-bar">
+                <input type="text" class="form-control" placeholder="Search..."> 
+              </span> 
             <div class="col-md-6">
               <div class="messages">
                <h3>Messages</h3> 
               <div class="list-group"> 
-                <a href="#" class="list-group-item list-group-item-action">Message 1</a>
-                 <a href="#" class="list-group-item list-group-item-action">Message 2</a> 
+                <a href="#" class="list-group-item list-group-item-action" onClick="showMessage(1)">Message 1</a>
+                 <a href="#" class="list-group-item list-group-item-action" onClick="showMessage(2)">Message 2</a> 
                  <a href="#" class="list-group-item list-group-item-action active">Message 3</a> 
                 </div> 
               </div>
@@ -50,7 +48,7 @@
                   <button class="btn  btn-light"><i class="fas fa-star text-info"></i></button>
                   </div>
               
-                <div class="message-content"> 
+                <div id="message-content"> 
                  
                   <p><strong>From:</strong> David  Winston</p> 
                   <p><strong>Date:</strong> April 6, 2024</p>
@@ -62,7 +60,7 @@
                   </div>
                  </div> 
               
-         
+         <div class="col-md-3">
                   <div class="recent-activity"> 
                     <h3>Recent Activity</h3> 
                     <ul class="list-group"> 
@@ -80,20 +78,23 @@
               <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
                
-               <!--<script>
-               $(document).ready(function(){ 
-                  $(".message").click(function()
-                  {
-                   $
-                   (".message").removeClass("active"); 
-                   $
-                   (this).addClass("active");
-                    var messageContent = $
-                    (this).text();
-                     $(".selected-message .message-content").html(messageContent); 
-                     }); 
-                     }); 
-                     </script> -->
+               <script>
+                function
+                showMessage(messageNumber) {
+                  var messageContent =
+                  document.getElementById("messageContent");
+                  if (messageNumber ===1) {
+                    messageContent.innerHTML = "<h4>Message 1</h4><p>This is the content of message1.</p>"
+ 
+                  } else if (messageNumber===2) {
+                    messageContent.innerHtml ="<h4>Message 2 </h4><p>This is the content of message 2.</p>";
+                  }
+            
+                }
+               
+            
+      
+                     </script> 
              
                      </body>
                       </html>
