@@ -8,17 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body> 
     <div class="container-fluid">
        <div class="row"> 
-        <div class="col-lg-3 sidebar">
-           <div class="compose-btn">
+        <div class="col-lg-3">
+          <div class="sidebar">
+           <span class="compose-btn">
              <button class="btn btn-primary btn-block">Compose</button>
-             </div> 
-             <div class="search-bar"> 
+            </span>
+            <span class="search-bar">
               <input type="text" class="form-control" placeholder="Search..."> 
-            </div> 
+            </span> 
             <div class="folders">
                <h3>Folders</h3> 
               <ul class="list-group"> 
@@ -26,11 +28,15 @@
                 <li class="list-group-item">Sent</li> 
                 <li class="list-group-item">Drafts</li> 
               </ul> 
-            </div> 
-            <div class="col-lg-9">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="messages">
+            </div>
+              <div>
+
+              </div>
+            <div class="col-md-6">
+              <div class="messages">
+              
+        
+                
                     <h3>Messages</h3> 
               <div class="list-group"> 
                 <a href="#" class="list-group-item list-group-item-action">Message 1</a>
@@ -38,9 +44,15 @@
                  <a href="#" class="list-group-item list-group-item-action active">Message 3</a> 
                 </div> 
               </div>
-              </div>
-              <div class="col-md-4">
+              
+        
                <div class="selected-message"> 
+                <div class="message-actions">
+                  <button class="btn btn-light"><i class="fas fa-reply text-primary"></i></button>
+                  <button class="btn btn-light"><i class="fas fa-trash text-danger"></i></button>
+                  <button class="btn btn-light"><i class="fas fa-archive text-warning"></i></button>
+                  <button class="btn  btn-light"><i class="fas fa-star text-info"></i></button>
+                  </div>
               
                 <div class="message-content"> 
                  
@@ -50,11 +62,11 @@
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ligula eu sapien laoreet ullamcorper. Duis eget tortor non velit vehicula posuere. Donec vel lectus quis magna tempor faucibus vel nec quam. </p> 
                   </div> 
                   <div class="reply-btn"> 
-                    <button class="btn btn-secondary">Reply</button> 
+                    <button class="btn btn-secondary btn-block">Reply</button> 
                   </div>
                  </div> 
-                </div>
-                <div class="col-lg-3"> 
+              
+         
                   <div class="recent-activity"> 
                     <h3>Recent Activity</h3> 
                     <ul class="list-group"> 
@@ -67,12 +79,13 @@
                 </div> 
               </div>
               </div>
-              </div>
-              /* <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+              
+               <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
               <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-               <script>
-                $(document).ready(function(){ 
+               
+               <!--<script>
+               $(document).ready(function(){ 
                   $(".message").click(function()
                   {
                    $
@@ -84,7 +97,7 @@
                      $(".selected-message .message-content").html(messageContent); 
                      }); 
                      }); 
-                     </script> */
+                     </script> -->
              
                      </body>
                       </html>

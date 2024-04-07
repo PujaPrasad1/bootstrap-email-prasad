@@ -23,15 +23,30 @@ body {
     padding-left: 280px;
     padding-right: 20px;
 }
-.compose-btn, 
+.compose-btn{
+    margin-bottom: 20px;
+} 
 .reply-btn {
 margin-top: 20px;
  } 
  .search-bar { 
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 } 
-.folders, 
+.folders ul {
+    list-style: none;
+    padding:0;
+} 
+.folders li {
+    padding: 10px 15 px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #8cc1df;
+    transition: background-color 0.3s ease;
+}
+.folders li:hover{
+    background-color: #dcdcdc;
+}
 .messages, 
 .selected-message, 
 .recent-activity { 
@@ -67,6 +82,9 @@ margin-top: 20px;
 }
 .reply-btn {
     margin-top: 20px;
+}
+.message-actions button {
+    margin-left: 5px;
 }
     @media (max-width: 991px) { 
         .folders, 
