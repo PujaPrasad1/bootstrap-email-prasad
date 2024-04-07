@@ -3,19 +3,6 @@ body {
     margin-top: 20px;
 }
 
-.expand {
-    position:fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    overflow-y: auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0.1);
-    padding: 20px;
-    height: 100%;
-    width: 250px;
-}
 .content {
    /* margin-left: 25%;*/
     padding-left: 280px;
