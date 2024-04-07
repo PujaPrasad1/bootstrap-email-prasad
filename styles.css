@@ -77,6 +77,14 @@ margin-top: 20px;
 .message-actions button {
     margin-left: 20px;
 }
+.recent-activity {
+    display: flex;
+    flex-direction: column;
+}
+.recent-activity .list-group {
+    flex-grow: 1;
+    overflow-y: auto;
+}
    /* @media (max-width: 991px) and (min-width: 100px) { 
         .folders, 
         .messages, 
